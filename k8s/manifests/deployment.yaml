@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: my-app
-          image: docker push nikhireddy/go:v1
+          image: nikhireddy/go:v1
           ports:
             - containerPort: 8081
