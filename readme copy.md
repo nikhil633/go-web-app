@@ -224,3 +224,14 @@ helm upgrade monitoring prometheus-community/kube-prometheus-stack -n monitoring
 
 
 
+
+
+
+gcloud compute firewall-rules create rule-8081 \
+    --direction=INGRESS \
+    --priority=777 \
+    --network=default \
+    --action=ALLOW \
+    --rules=tcp:8081 \
+    --source-ranges=0.0.0.0/0 \
+    --target-tags=allow-custom-port
