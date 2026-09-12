@@ -17,3 +17,7 @@ The server will start on port 8080. You can access it by navigating to `http://l
 ![Website](static/images/golang-website.png)
 
 
+
+git add .
+git commit -m "added docker"
+git push origin main
