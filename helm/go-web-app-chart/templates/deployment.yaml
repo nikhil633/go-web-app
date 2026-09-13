@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: my-app
-          image: nikhireddy/go:v1
+          image: nikhireddy/go:{{ .Values.image.tag }}
           ports:
             - containerPort: 8081
